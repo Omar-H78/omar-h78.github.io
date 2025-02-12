@@ -1,0 +1,270 @@
+<html>
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+        body {
+            font-family: 'PT Sans', sans-serif;
+        }
+
+        #TimeSpent {
+            font-weight: bold;
+            color: rgb(50, 50, 50);
+            margin-top: -20px;
+        }
+
+        table {
+            width: 75vh;
+            border-collapse: collapse;
+            table-layout: fixed;
+            aspect-ratio: 1;
+        }
+
+        td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            height: 50px;
+            /* Reduced height */
+            vertical-align: center;
+        }
+
+        header {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 75vh;
+            /* Match the width of the table */
+            margin: 0 auto 20px auto;
+            /* Center the header and add bottom margin */
+        }
+
+        thead td {
+            font-weight: bold;
+            background-color: #f2f2f2;
+        }
+
+        #Entry {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid black;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        #Entry h2 {
+            margin-top: 0;
+        }
+
+        #Entry img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        button {
+            width: 100px;
+            /* Set a fixed width for the buttons */
+            font-family: inherit;
+            /* Inherit the font from the body */
+        }
+
+        td:hover {
+            background-color: #c6c6c6;
+            transition: background-color 0.2s;
+        }
+
+        .JournalEntry {
+            background-color: lightgreen;
+        }
+
+        .JournalEntry:hover {
+            background-color: rgb(109, 198, 109);
+            cursor: pointer;
+        }
+
+        thead td {
+            background-color: #f2f2f2;
+        }
+
+        thead td:hover {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="Month">
+        <button id="Previous">Previous</button>
+        <span id="MonthTitle">September</span>
+        <button id="Next">Next</button>
+    </header>
+
+    <table id="calendar" bgcolor="lightgrey" align="center" cellspacing="12" cellpadding="12">
+        <thead>
+            <tr>
+                <td>Sun</td>
+                <td>Mon</td>
+                <td>Tue</td>
+                <td>Wed</td>
+                <td>Thu</td>
+                <td>Fri</td>
+                <td>Sat</td>
+            </tr>
+        </thead>
+
+    </table>
+
+    <div id="Entry">
+        <h2>September 3rd</h2>
+        <p id="TimeSpent">1:00-3:00</p>
+        <p id="EntryText">Text</p>
+        <img id="EntryImage">
+    </div>
+
+    <script type="module">
+        
+        //Function to get the data from the JSON file
+        async function getData(url) {
+            const response = await fetch(url);
+
+            return response.json();
+        }
+        
+        //The URL of the JSON file
+        let url = "./JournalEntries.json";
+        
+        //Get the data from the JSON file
+        let entries = await getData(url);
+        
+        //Function to get the modulus of a number that works with negative numbers
+        function betterModulus(a, b) {
+            return ((a % b) + b) % b;
+        }
+
+        //How many days in each month
+        const Months = {
+            January: 31,
+            February: 28,
+            March: 31,
+            April: 30,
+            May: 31,
+            June: 30,
+            July: 31,
+            August: 31,
+            September: 30,
+            October: 31,
+            November: 30,
+            December: 31,
+        }
+        
+        //Get the month and the calendar elements
+        const Month = document.getElementById("Month");
+        const Calendar = document.getElementById("calendar");
+
+        //Get the month number and the month names
+        let MonthNum = 0;
+        let _Months = ["September", "October", "November", "December", "January", "February"];
+
+        let MonthName = document.getElementById("Month");
+
+        //Which journal entry are we looking at
+        let EntryDate = "9-3";
+
+        function createCalendar() {
+            // Clear the existing calendar rows
+            while (Calendar.rows.length > 1) {
+                Calendar.deleteRow(1);
+            }
+            
+            //Find what day of the week the month starts on
+            let dayOffset = new Date(2024, MonthNum + 8, 1).getDay();
+            let row;
+            let cell;
+            let date;
+
+            // Create the calendar
+            for (let i = 0; i < 6; i++) {
+                // Create the row
+                row = document.createElement("tr");
+                for (let j = 0; j < 7; j++) {
+                    // Create the cell
+                    cell = document.createElement("td");
+                    // Calculate the date
+                    date = 1 + betterModulus((i * 7 + (j - dayOffset)), Months[_Months[MonthNum]]);
+                    // Fill the cell with the date
+                    cell.innerHTML = date;
+                    // If the date is in the previous month clear it
+                    if (i == 0 && cell.innerHTML > 20 || i > 3 && cell.innerHTML < 20) {
+                        cell.innerHTML = "";
+                    }
+                    if (typeof entries[(MonthNum + 9) + "-" + cell.innerHTML] !== "undefined") {
+                        cell.classList.add("JournalEntry");
+                    }
+                    // Append the cell to the row
+                    row.appendChild(cell);
+                }
+                // Append the row to the calendar
+                Calendar.appendChild(row);
+            }
+            document.getElementById("MonthTitle").innerHTML = _Months[MonthNum];
+
+            //Get the entry cells
+            let EntryDays = document.getElementsByClassName("JournalEntry");
+            //Add a click event to them
+            for (let i = 0; i < EntryDays.length; i++) {
+                EntryDays[i].onclick = function () {
+                    EntryDate = (MonthNum + 9) + "-" + this.innerHTML;
+                    UpdateEntry();
+                }
+            }
+        }
+
+        // Call the function to create the calendar initially
+        createCalendar();
+
+        // Group the variables
+        const Entry = document.getElementById("EntryText");
+        const EntryTitle = document.getElementById("Entry").getElementsByTagName("h2")[0];
+        const Image = document.getElementById("EntryImage");
+        // Update the entry
+        function UpdateEntry() {
+            // Set the entry text
+            Entry.innerHTML = entries[EntryDate].entry;
+
+            // Set the title for the entry to the date
+            EntryTitle.innerHTML = _Months[MonthNum] + " " + EntryDate.split("-")[1];
+
+            // Set the image to the entry for the day
+            Image.src = entries[EntryDate].image;
+        }
+        UpdateEntry();
+        //Get the buttons
+        const Previous = document.getElementById("Previous");
+        const Next = document.getElementById("Next");
+        //Set the month to the previous month
+        Previous.onclick = function () {
+            MonthNum--;
+            if (MonthNum < 0) {
+                MonthNum = 5;
+            }
+            createCalendar();
+        }
+        //Set the month to the next month
+        Next.onclick = function () {
+            MonthNum++;
+            if (MonthNum > 5) {
+                MonthNum = 0;
+            }
+            createCalendar();
+        }
+    </script>
+</body>
+
+</html>
