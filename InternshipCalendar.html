@@ -3,7 +3,15 @@
 <head>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+        .fade-out {
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
 
+        .fade-in {
+            opacity: 1;
+            transition: opacity 0.5s;
+        }
         body {
             font-family: 'PT Sans', sans-serif;
         }
@@ -233,8 +241,17 @@
         const Entry = document.getElementById("EntryText");
         const EntryTitle = document.getElementById("Entry").getElementsByTagName("h2")[0];
         const Image = document.getElementById("EntryImage");
+        const TimeSpent = document.getElementById("TimeSpent");
         // Update the entry
         function UpdateEntry() {
+            // Add fade-out class to the entry
+            Entry.classList.add("fade-out");
+            EntryTitle.classList.add("fade-out");
+            Image.classList.add("fade-out");
+            TimeSpent.classList.add("fade-out");
+            
+            // Wait for the fade-out animation to complete
+            setTimeout(() => {
             // Set the entry text
             Entry.innerHTML = entries[EntryDate].entry;
 
@@ -243,6 +260,29 @@
 
             // Set the image to the entry for the day
             Image.src = entries[EntryDate].image;
+
+            // Set the time spent for the entry
+            TimeSpent.innerHTML = entries[EntryDate].time;
+
+            // Remove fade-out class and add fade-in class
+            Entry.classList.remove("fade-out");
+            EntryTitle.classList.remove("fade-out");
+            Image.classList.remove("fade-out");
+            TimeSpent.classList.remove("fade-out");
+
+            Entry.classList.add("fade-in");
+            EntryTitle.classList.add("fade-in");
+            Image.classList.add("fade-in");
+            TimeSpent.classList.add("fade-in");
+
+            // Remove fade-in class after animation completes
+            setTimeout(() => {
+                Entry.classList.remove("fade-in");
+                EntryTitle.classList.remove("fade-in");
+                Image.classList.remove("fade-in");
+                TimeSpent.classList.remove("fade-in");
+            }, 500); // Match the duration of the fade-in animation
+            }, 500); // Match the duration of the fade-out animation}
         }
         UpdateEntry();
         //Get the buttons
