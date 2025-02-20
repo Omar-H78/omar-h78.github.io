@@ -213,9 +213,10 @@
                     if (i == 0 && cell.innerHTML > 20 || i > 3 && cell.innerHTML < 20) {
                         cell.innerHTML = "";
                     }
-                    if (typeof entries[(MonthNum + 9) + "-" + cell.innerHTML] !== "undefined") {
+                    if (typeof entries[(MonthNum + 8)%12+1 + "-" + cell.innerHTML] !== "undefined") {
                         cell.classList.add("JournalEntry");
                     }
+                    
                     // Append the cell to the row
                     row.appendChild(cell);
                 }
@@ -229,7 +230,7 @@
             //Add a click event to them
             for (let i = 0; i < EntryDays.length; i++) {
                 EntryDays[i].onclick = function () {
-                    EntryDate = (MonthNum + 9) + "-" + this.innerHTML;
+                    EntryDate = (MonthNum + 8)%12+1 + "-" + EntryDays[i].innerHTML;
                     UpdateEntry();
                 }
             }
@@ -283,7 +284,7 @@
                 Image.classList.remove("fade-in");
                 TimeSpent.classList.remove("fade-in");
             }, 500); // Match the duration of the fade-in animation
-            }, 500); // Match the duration of the fade-out animation}
+            }, 500); // Match the duration of the fade-out animation
         }
         UpdateEntry();
         //Get the buttons

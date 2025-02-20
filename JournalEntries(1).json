@@ -99,7 +99,7 @@
     "entry": "Meeting about HPW (Hot Purified Water) Processing changes. Vent filter to be added to outdoors sterile water tanks. Sent quote requests for electrical panel materials to suppliers. Received 2/3 so far. Adjusted total price in accordance to the quotes. Began designing/drawing out the circuit schematic for the electrical panel. The page for power is completed. Important observation: All circuit elements drawn in parallel to the power supply. Optocoupler: Relay the signal from the PLC to the component. Used to improve the lifespan of the PLC.",
     "time": "1:00 - 3:00"
   },
-  "11-3": {
+  "11-5": {
     "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
     "entry": "Worked on a power app allowing the people on the floor to edit previous submissions (downtime reporting program). Received MC-MC quote. Adjusted schematic drawings to include terminal blocks. Fixed PLC inputs schematic and drew PLC outputs schematic.",
     "time": "1:00 - 3:00"
