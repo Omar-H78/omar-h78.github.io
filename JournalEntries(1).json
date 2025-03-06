@@ -1,166 +1,166 @@
 {
   "9-3": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/9-3.jpg",
     "entry": "Started by looking at faults on one of the lines involving a mechanical error. Understood the extreme costs of production line downtime. Investigated a fault in the packaging line where a motor overheated to 200 deg. C. Was solved by aligning 2 conveyors which were out of sync. Taught me the importance of precision. Took a look at the legal paperwork involving the regulations regarding these processes. Additionally looked at creating a PCR (Product Category Rules, a process used to create a new product/process). Took a look at the vision system that checked labels on filled bottles, and developed a standardized spreadsheet of aperture, gamma, and exposure values for one of the lines. Understood the role of software, electrical, and mechanical engineering in working together. Also learned some PlCs. Took a plant tour, looking at the bottle processing lines and learned about the production process.",
     "time": "1:00 - 4:45"
   },
   "9-5": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/9-5.jpg",
     "entry": "Started the day by checking ZPI to see the efficiency of the newly improved vision system. Efficiency improved from 2% of bottles discarded (majority due to bad label vision recognition, but some to faulty/bad labels) to 0.4% discarded. Following that was a meeting regarding a machine called a palletizer which places finished boxes on pallets and then pulls away the pallets. The meeting for the palletizer was still in the design phase, discussing dimensions and requirements such as depth of the concrete that the palletizer would be bolted to. Following that I was introduced to ZPI, an Automated Reliability Tracking System, which tracks different machine faults, states and more. Covered OEE (research it further). Attended the 2:30 meeting which covered the data from ZPI including line efficiencies, down time, workplace accidents, staffing amounts (an overview of all, none actually were in depth).",
     "time": "1:00 - 3:00"
   },
   "9-9": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/9-9.jpg",
     "entry": "Started off by being taken to the BISD (Batch Ingredients Sorting and Distribution) and specifically the valve matrix. The valve matrix controls the amounts of ingredients sent to the mixing containers, however the valves themselves were faulty as the solenoids telling them to open or shut were unreliable. Was shown how the valve matrix functioned and its key parts, as well as told how it would be tested upon completion. During this time I was shown how and allowed to replace one of the valves myself. The majority of the time was spent replacing valves and understanding how the valve matrix worked. Looked at and modified the PLC coding of the individual valves on the valve matrix and updated the values to the correct values. Updating the values is a tedious process which supposedly can’t be optimized much.",
     "time": "1:05 - 4:00"
   },
   "9-10": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/9-10.webp",
     "entry": "Started off by observing how the vision system worked and by trying to fix a sample group of failed labels. Worked on an app for safety dept. Replaced a part with an air leak in the BISD.",
     "time": "1:00 - 4:10"
   },
   "9-12": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/9-12.jpg",
     "entry": "Dealt with a vision system problem on line 8 (labler), and then following that, one on line 10 (package checker).",
     "time": "1:00 - 3:00"
   },
   "9-16": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/9-16.jpg",
     "entry": "Worked with the BISD validation team. They completed multiple validation tests: Completed a CIP (Clean in place) of tank 3. Tested the pressure release valve on one of the tanks. Tested and fixed a bug regarding certain recipes taking control of valves and not releasing control even after the process was aborted and a new one started. Went to lower fill and turned a switch that turned on a system. Pumped 2000L of water from fill to storage tank 1.",
     "time": "1:00 - 4:20"
   },
   "9-17": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/9-17.jpg",
     "entry": "Started off by completing the mentor eval form. Listened in on a meeting detailing the network structure of all of the servers, machines, and networks for Bausch’s production systems. Saw the Power BI (sort of like a PowerPoint and Excel hybrid) that displayed the data concerning safety, efficiency etc. (basically an auto-generated report).",
     "time": "1:00 - 2:45"
   },
   "9-23": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/9-23.jpg",
     "entry": "Started off by getting a test environment in In-Sight Explorer and a few job files (data files with the algorithms used for parsing the images), and fiddling around with it. I learned how In-Vision Explorer works by messing around with different values and fixing incorrectly marked fail images. Following that I went up to BISD, where they were getting ready to run an effectiveness test on the CIP system in the storage tanks. They would do so by spraying the insides with riboflavin, a compound that glows brightly under a black light. Following that they would run the CIP, and would then analyze to see if any riboflavin was still visible. Observed that one of the steam traps was faulty/not installed properly, and that it would leak steam. Got added to things that should be fixed.",
     "time": "1:00 - 3:00"
   },
   "9-26": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/9-26.png",
     "entry": "Discussed modifying palletizer layout and reducing omniwheel move tables to 3 from 6. ECR/JCO- Engineering Change Request/Job Change Order. OEM- Original equipment manufacturer. URS - User Requirement Specification. CIP - Constant Improvement Program (Corporate/Business definition)/Clean in Place (Storage tank definition). Discussed what a CIP was and how it’s used to lay out the future for the company, and how measures such as OEE can help improve the CIP and highlight areas that need improvement.",
     "time": "1:00 - 3:05"
   },
   "9-30": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/9-30.jpg",
     "entry": "Saw Factory view, which basically creates the HMI, and watched as they worked on improving the error detection (basically when an operator opens the door it will override the fault that just occurred so a fix is currently being planned). Saw the Power app for the packaging and filling lines that allow them to quickly report/pin/communicate stuff. Power apps kinda sucks b/c no looping exists for some unknown reason?",
     "time": "1:35 - 3:45"
   },
   "10-1": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/10-1.png",
     "entry": "Started off working with Josh on Power Apps on an error reporting app, discovered power apps has functions but did not figure out how they worked. Managed to finally get a Factory Talk ME activation to work. Learned about the Electronics training circuit thing and messed around with it a bit, and saw how the circuits are built and set up with their safety features and stuff, as well as how the speed of a certain part can be altered either directly or via a PLC. UDI: Unique Device Identifier OR User Defined Instruction. UPS: Uninterruptible Power Supply. MP: Main Panel. AWG: American Wire Gauge. Looked at schematics for 2 different machines. Review/Research schematics in order to understand them better.",
     "time": "10:00 - 2:00"
   },
   "10-3": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/10-3.jpg",
     "entry": "Palletizer meeting, misc changes and final adjustments before final design review next week. Toured the utilities area and saw where the power, sterile water, steam, and air are produced. CER: Capital Expenditure Request. Took a look at BISD’s validation process. Co-op got a project to build the electrical part of a project where bottles would need to be diverted onto bulk packing.",
     "time": "1:00 - 3:10"
   },
   "10-7": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/10-7.jpg",
     "entry": "Worked on the project which is creating the electrical panel for a bulk packing line controller. The task of the controller is to count and divert. Two main groups of components: Electrical components: What actually does the logic, counting, and controlling. Support components: Power supply, circuit breakers, disconnects, etc.",
     "time": "1:10 - 4:00"
   },
   "10-8": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/10-8.png",
     "entry": "More work on the project, managed to find a power supply, a solenoid, and fiber optic cables. Worked on interfacing the HMI with a PLC to allow for fault reporting. Factory walk, took a look at line 8’s sensors which are reflective.",
     "time": "1:00 - 4:30"
   },
   "10-10": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/10-10.png",
     "entry": "Went to look at a fault on line 5. Fault had occurred over 100 times since during the day. Fault involved the reject timing being out of sync with the reject sensor. Opened up lid cover on the camera system, first issue was that the sensor was not pointing at the intersection of the 2 cameras, as the cameras were no longer square to each other. We adjusted the cameras and lined them up properly and then tested it, with good results. The next issue was that the sensor timings were not lining up with the reject timings as they were supposed to be centered within each other (square waves), and this was fixed through a PLC adjustment, just adding a slight delay. However even after these changes, the sensor would occasionally not fire at all, which meant either a faulty sensor, or a faulty optic fiber cable. We went to the part inventory room and found a spare sensor, signed it out, and then took it to the line and replaced the broken one. The issue improved but still persisted implying a faulty optic cable. We went to the inventory room, got a fiber optic cable signed out, it was the wrong diameter, so we went to Lewis’s office and found a spare one with the correct diameter, replaced the one on the line, and it finally worked.",
     "time": "1:00 - 3:15"
   },
   "10-14": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/10-14.jpg",
     "entry": "Worked more on the bulk packer line diverter, and completed the bill of materials. Started finding dimensions and drawing rough sketches of the electrical box. Went out to line four to look at an existing one to get an idea for size.",
     "time": "1:00 - 4:00"
   },
   "10-15": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/10-15.png",
     "entry": "Gathering miscellaneous parts remaining.",
     "time": "1:00 - 4:05"
   },
   "10-21": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/10-21.jpg",
     "entry": "Finalized the BOM for the electrical panel. Discussed a little bit about microchips for a personal project that I was working on. Looked into why OEE calculations were acting strangely when switching from all to scheduled production time.",
     "time": "1:00 - 3:00"
   },
   "10-29": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/10-29.jpg",
     "entry": "Listened in on a scheduling meeting for a future project. The start date is as soon as the parts come in and the project is scheduled relative to that. Hopefully actually finalized the BOM and now starting to contact suppliers.",
     "time": "1:00 - 3:00"
   },
   "10-31": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/10-31.jpg",
     "entry": "Meeting about HPW (Hot Purified Water) Processing changes. Vent filter to be added to outdoors sterile water tanks. Sent quote requests for electrical panel materials to suppliers. Received 2/3 so far. Adjusted total price in accordance to the quotes. Began designing/drawing out the circuit schematic for the electrical panel. The page for power is completed. Important observation: All circuit elements drawn in parallel to the power supply. Optocoupler: Relay the signal from the PLC to the component. Used to improve the lifespan of the PLC.",
     "time": "1:00 - 3:00"
   },
   "11-5": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/11-5.jpg",
     "entry": "Worked on a power app allowing the people on the floor to edit previous submissions (downtime reporting program). Received MC-MC quote. Adjusted schematic drawings to include terminal blocks. Fixed PLC inputs schematic and drew PLC outputs schematic.",
     "time": "1:00 - 3:00"
   },
   "11-7": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/11-7.jpg",
     "entry": "Worked with power apps, and made a handoff app for Filling. Learned some Power Apps syntax. Sort of like an Excel + C# hybrid, except 10x worse than both of them. Asked a question about voltage regulators.",
     "time": "1:00 - 3:00"
   },
   "11-12": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/11-12.jpg",
     "entry": "Checked to see if MC-MC supplies had arrived. Decided out the wiring paths for the panel. Went over the schematic drawings with Lewis and got feedback. Fixed schematic issues. Meeting w/ Ms. Shew, discussed how the internship was going so far. Drew process diagram to make programming the PLC easier.",
     "time": "1:00 - 3:20"
   },
   "11-14": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/11-14.jpg",
     "entry": "Fixed a tiny logic error on Josh’s process diagram. Talked with Scott about a PO (Product Order) contract that he’s been working on. Also asked him about BISD validation status. The media test is tomorrow. Worked w/ Josh on adding a file attachment field to the packaging handoff form. Worked with Lewis on creating a rudimentary schedule for a future project using Microsoft Projects.",
     "time": "1:00 - 2:55"
   },
   "11-19": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/11-19.jpg",
     "entry": "Started the day by helping Josh program the PLC. The process is as follows: Check if the operator has hit the start button. Check that the mechanism is unblocked. Check for a signal from either sensor. If all satisfied, increment the counter. If the counter reaches the box size then reset it and send a block signal. Send a divert signal and invert the latch. Developed the latch mechanism for the divert signal. Cut the din rail and wire way. Mounted the PSU (Power Supply Unit), PLC (Programmable Logic Controller), and circuit breaker to the dinrail. Connected power from the PSU to PLC. Connected 3-pole AC power to PSU (Learned how to wire a wall plug in the process). Attempted to assign the PLC an IP address. RX Linx was having issues detecting the PLC. After several attempts at trouble-shooting and restarting the VM, RX Linx finally recognized the PLC and (hopefully) assigned it the IP address.",
     "time": "1:00 - 4:30"
   },
   "11-21": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/11-21.jpg",
     "entry": "B+L Future planning meeting: Purpose: To improve the ability to expand the Greenville B+L facility. Constrained areas: Filling and Packaging. Proposals: New warehouse in existing parking lot. Overhead conveyor system to connect to it. Addition to existing warehouse. Takes hill between current warehouse and parking. Office addition. Doubles office space, multifloor. Takes the offices in the plant out of it allowing for more production areas. Maintenance addition: More storage for machines. Production addition: Better staging for bottles going to Gamma. New utility parking: Improve parking situation. Swap filling and packaging: Allows for larger fill rooms and longer packaging lines. 5 lines should be able to stay active while the changes are made. Phasing was discussed next. Fire wall- Wall separating warehouse from the lines to stop fires in the off chance one ever occurs. One of the major goals is to eliminate overhead accumulation conveyors. Left halfway through the meeting to work with Josh on programming the PLC. The previous logic did not work due to the PLC’s computation method. We changed the logic to instead use 2 counters. Initially it did not work due to us making the mistake of using the same variable for 2 one shots, After fixing this, it worked properly. After that took a look at the terminal blocks and ground blocks which got attached to the dinrail.",
     "time": "1:00 - 3:15"
   },
   "12-3": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/12-3.jpg",
     "entry": "Worked on some HMI programming. Made the main page and added some buttons and linked them to the PLC.",
     "time": "1:00 - 3:00"
   },
   "12-5": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/12-5.jpg",
     "entry": "Started assembling the HMI onto panel. Wired up the majority of the backplane.",
     "time": "1:00 - 3:00"
   },
   "12-17": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/12-17.jpg",
     "entry": "Began organizing wire into wire duct. Started labeling wires. Worked some more on the HMI.",
     "time": "1:00 - 3:00"
   },
   "1-13": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/1-13.jpg",
     "entry": "Saw the work that Josh did before finishing his rotation in December. Met returning co-op James (He had been the co-op during the summer semester). Got him up to speed on some of the panel specifics involving the PLC code and remaining work. Got his VM and computer configured to be able to access/modify the PLC code.",
     "time": "1:00 - 3:15"
   },
   "1-15": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/1-15.jpg",
     "entry": "Took a look at the physical line and line diverter that was to be installed. Identified and fixed a potential issue with the divert triggering instantly which may potentially cause bottles to fall over. Streamlined the block and divert PLC code to use less rungs.",
     "time": "1:10 - 3:20"
   },
   "1-27": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/1-27.webp",
     "entry": "Took a look at the completed and shrunken down PLC code. Tested sensors and PLC. Had an issue where the solenoid would not swap states. Tried swapping the solenoids, tried changing the wires. Ended up testing the output and input voltages and found a faulty optocoupler, switched it, and it worked. We had to disconnect a few wires to put a casing on the wire skin(?) and after reconnecting the wires it quit working with the optocoupler failing again (measured 12v when no input voltage applied [it does still receive power]).",
     "time": "1:00 - 3:30"
   },
   "2-3": {
-    "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+    "image": "https://omar-h78.github.io/Internship%20photos/2-3.webp",
     "entry": "Took a look at the completed assembly line, did some sensor adjustments. Slight issue with sensors being too close to bottles causing multiple triggers. Had to be remachined.",
     "time": "1:00 - 2:30"
   }
