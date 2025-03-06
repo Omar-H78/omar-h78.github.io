@@ -261,7 +261,17 @@
             EntryTitle.innerHTML = _Months[MonthNum] + " " + EntryDate.split("-")[1];
 
             // Set the image to the entry for the day
-            Image.src = entries[EntryDate].image;
+            let jpgPath = "https://omar-h78.github.io/Internship photos/" + EntryDate + ".jpg";
+            let pngPath = "https://omar-h78.github.io/Internship photos/" + EntryDate + ".png";
+            fetch(jpgPath).then(response => {
+                if (response.ok) {
+                    Image.src = jpgPath;
+                } else {
+                    Image.src = pngPath;
+                }
+            }).catch(() => {
+                Image.src = pngPath;
+            });
 
             // Set the time spent for the entry
             TimeSpent.innerHTML = entries[EntryDate].time;

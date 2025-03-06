@@ -159,7 +159,7 @@
     "entry": "Took a look at the completed and shrunken down PLC code. Tested sensors and PLC. Had an issue where the solenoid would not swap states. Tried swapping the solenoids, tried changing the wires. Ended up testing the output and input voltages and found a faulty optocoupler, switched it, and it worked. We had to disconnect a few wires to put a casing on the wire skin(?) and after reconnecting the wires it quit working with the optocoupler failing again (measured 12v when no input voltage applied [it does still receive power]).",
     "time": "1:00 - 3:30"
   },
-  "2-1": {
+  "2-3": {
     "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
     "entry": "Took a look at the completed assembly line, did some sensor adjustments. Slight issue with sensors being too close to bottles causing multiple triggers. Had to be remachined.",
     "time": "1:00 - 2:30"
